@@ -1,0 +1,18 @@
+plugins { id 'java' }
+
+apply plugin: 'java'
+
+repositories {
+	mavenLocal()
+	mavenCentral {
+		content {
+			includeGroup 'junit'
+			includeGroup 'org.hamcrest'
+            includeGroup 'io.netty'
+		}
+	}
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot:1.17.1-R0.1-SNAPSHOT'
+}

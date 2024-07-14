@@ -1,0 +1,17 @@
+plugins { id 'java' }
+
+apply plugin: 'java'
+
+repositories {
+	mavenLocal()
+	mavenCentral {
+		content {
+			includeGroup 'junit'
+			includeGroup 'org.hamcrest'
+		}
+	}
+}
+
+dependencies {
+	compileOnly 'org.bukkit:craftbukkit:1.12.2-R0.1-SNAPSHOT'
+}
