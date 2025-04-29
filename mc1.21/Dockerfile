@@ -7,7 +7,7 @@ RUN apk add openjdk21
 RUN mkdir build-tools
 WORKDIR /build-tools
 RUN curl https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar > BuildTools.jar
-RUN java -jar BuildTools.jar --rev 1.21
+RUN java -jar BuildTools.jar --rev 1.21.5
 
 WORKDIR /
 RUN mkdir dummy-project
